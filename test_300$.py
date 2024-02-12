@@ -13,14 +13,14 @@
 #         return 
 
 
-# # находим медиану
-# def find_median(x):
-#     if len(x) % 2 == 0:
-#         return (x[len(x) // 2] + x[len(x) // 2 -1]) / 2
-#     else:
-#         return x[len(x) // 2]
+# находим медиану
+def find_median(x):
+    if len(x) % 2 == 0:
+        return (x[len(x) // 2] + x[len(x) // 2 -1]) / 2
+    else:
+        return x[len(x) // 2]
 
-# print(find_median(a))
+print(find_median(a))
 
 
 

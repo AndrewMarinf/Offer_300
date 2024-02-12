@@ -18,3 +18,6 @@ print(dict2)
 print(id(dict1))
 print(id(dict2))
 
+
+
+print(6 % 7)
