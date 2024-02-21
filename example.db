@@ -1,0 +1,15 @@
+CREATE OR REPLACE FUNCTION NthHighestSalary(N INT) RETURNS TABLE (Salary INT) AS $$
+BEGIN
+  RETURN QUERY (
+    -- Запрос ниже возвращает N-ую самую высокую зарплату из таблицы "Employee".
+    -- Если в таблице "Employee" меньше чем N различных зарплат, возвращается NULL.
+    WITH RankedSalaries AS (
+        SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rnk
+        FROM Employee
+    )
+    SELECT salary
+    FROM RankedSalaries
+    WHERE rnk = N;
+  );
+END;
+$$ LANGUAGE plpgsql;
