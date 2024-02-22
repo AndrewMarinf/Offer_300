@@ -19,5 +19,5 @@ print(id(dict1))
 print(id(dict2))
 
 
-
+print('для чего то надо ')
 print(6 % 7)
