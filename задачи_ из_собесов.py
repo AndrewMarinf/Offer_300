@@ -20,4 +20,5 @@ print(id(dict2))
 
 
 print('для чего то надо ')
+print('234324')
 print(6 % 7)
