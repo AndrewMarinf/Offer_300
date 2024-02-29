@@ -25,3 +25,9 @@ print(1234)
 print(6 % 7)
 print(234)
 print(54678)
+print('¯\\_(ツ)_//¯')
+
+
+word = 'acbba'
+def palindrome_check(word_) -> bool:
+    pass
