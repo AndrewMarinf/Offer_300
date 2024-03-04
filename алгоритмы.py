@@ -20,28 +20,16 @@ print(py(list_))
 print(count)
 
 
+"""ВСЕ НУЛИ В КОНЕЦ"""
+l = [1, 0, 9, 6, 0, 12, 3]
+
+def moveZeroes( nums: list[int]) -> None:
+        last_non_zero = 0
+        for i in range(len(nums)):
+            if nums[i] != 0:               
+                nums[last_non_zero], nums[i] = nums[i], nums[last_non_zero]
+                last_non_zero += 1
+        return l               
 
 
-
-
-
-
-
-
-a = [325,567,3532,868,346]
-count = 0
-
-
-def f(h):
-    n = len(h)
-    for run_count in range(n-1):
-        for i in range(n-1):
-            global count
-            if h[i]> h[i+1]:
-                count += 1 
-                h[i],h[i+1] = h[i+1],h[i]
-    return h            
-
-
-print(f(a))
-print(count)
+print(moveZeroes(l))                
