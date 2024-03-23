@@ -29,6 +29,7 @@ print('¯\\_(ツ)_//¯')
 print(345324)
 print(234123)
 print(436)
+print(345)
 
 
 word = 'acbba'
