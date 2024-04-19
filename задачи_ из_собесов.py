@@ -35,3 +35,27 @@ print(345)
 word = 'acbba'
 def palindrome_check(word_) -> bool:
     pass
+
+
+a = 2 
+b = 6 
+print('result: ', a + b)
+result  = a + b 
+
+
+
+sum = 0 
+n = [7,5,8,11,2,5,4,2,2]
+for i in n:
+    if i % 2 ==0:
+    sum += i
+print(sum) 
+
+
+scores = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+delete = [1,4,len(scores)-1]
+delete.sort(reverse = True)
+for ind in scores:
+    del scores[delete] 
+print(sorted)    
